@@ -58,7 +58,7 @@ const AsideBar = () => {
               <IoNewspaperOutline className="me-2 icon" />
               Conference
             </NavLink>
-          </ListGroup.Item> */}
+          // </ListGroup.Item> */}
 
            <ListGroup.Item>
             <NavLink to="/Downloads" className="nav-link p-0" id='hello1'>
