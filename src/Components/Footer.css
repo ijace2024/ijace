@@ -1,0 +1,29 @@
+.developer-credit {
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+.visitor-count-wrapper .card {
+    background-color: #212529;
+    height: auto;
+    width: 170px;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.visitor-count-wrapper .card-body {
+    padding: 0.5rem;
+}
+
+.visitor-count-wrapper .card-title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.visitor-count-wrapper .card-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}

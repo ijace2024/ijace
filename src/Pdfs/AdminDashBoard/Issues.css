@@ -1,0 +1,105 @@
+/* Container */
+
+.container {
+    max-width: 1100px;
+}
+
+
+/* Page Title */
+
+h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #1f2937;
+    /* dark slate */
+}
+
+
+/* Year Block */
+
+.year-block {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 18px 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Year Title */
+
+.year-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    border-left: 5px solid #2563eb;
+    /* blue bar */
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+
+/* Issue Card */
+
+.issue-link {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.25s ease;
+    font-size: 15px;
+}
+
+
+/* Hover Effect */
+
+.issue-link:hover {
+    background: #f1f5ff;
+    border-color: #2563eb;
+    transform: translateX(6px);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Volume/Issue Text */
+
+.issue-text {
+    color: #111827;
+    font-weight: 600;
+}
+
+
+/* Period Text */
+
+.issue-period {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* Right Arrow */
+
+.issue-arrow {
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .issue-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .issue-arrow {
+        align-self: flex-end;
+    }
+}

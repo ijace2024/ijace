@@ -1,0 +1,492 @@
+/* ================================
+   PdfList - Responsive Styles
+   ================================ */
+
+.pdf-list-container {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f8f9fa;
+    min-height: 50vh;
+}
+
+.pdf-list-header {
+    margin-bottom: 2rem;
+}
+
+.pdf-list-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 1rem;
+}
+
+.pdf-list-wrapper {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.pdf-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.pdf-table-head {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.pdf-table-head th {
+    padding: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    white-space: nowrap;
+    border-right: 1px solid #dee2e6;
+}
+
+.pdf-table-head th:last-child {
+    border-right: none;
+}
+
+.pdf-table-body td {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.pdf-row:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.pdf-row:last-child td {
+    border-bottom: none;
+}
+
+.pdf-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+    word-break: break-word;
+    transition: all 0.3s;
+}
+
+.pdf-link:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+.no-data {
+    padding: 3rem 1rem;
+    font-size: 1.1rem;
+    color: #999;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    color: inherit;
+}
+
+.btn-edit {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    border: none;
+}
+
+.btn-edit:hover {
+    background-color: #ffb300 !important;
+    color: #000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0.3rem 0.6rem rgba(255, 193, 7, 0.3);
+}
+
+.btn-delete {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #c82333 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0.3rem 0.6rem rgba(220, 53, 69, 0.3);
+}
+
+
+/* ================================
+   Large Devices (1025px+)
+   ================================ */
+
+@media (min-width: 1025px) {
+    .col-id,
+    .col-volume,
+    .col-issue,
+    .col-year {
+        width: 80px;
+        text-align: center;
+    }
+    .col-type {
+        width: 120px;
+    }
+    .col-actions {
+        width: 180px;
+        text-align: center;
+    }
+}
+
+
+/* ================================
+   Tablet Devices (768px - 1024px)
+   ================================ */
+
+@media (max-width: 1024px) {
+    .pdf-list-container {
+        padding: 0.875rem;
+    }
+    .pdf-list-title {
+        font-size: 1.75rem;
+    }
+    .pdf-table {
+        font-size: 0.9rem;
+    }
+    .pdf-table-head th {
+        padding: 0.875rem;
+        font-size: 0.9rem;
+    }
+    .pdf-table-body td {
+        padding: 0.875rem;
+    }
+    .action-buttons {
+        gap: 0.375rem;
+    }
+    .btn {
+        padding: 0.45rem 0.85rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* ================================
+   Medium Devices (576px - 767px)
+   ================================ */
+
+@media (max-width: 767px) {
+    .pdf-list-container {
+        padding: 0.75rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .pdf-list-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .pdf-list-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .pdf-table {
+        min-width: 600px;
+        font-size: 0.85rem;
+    }
+    .pdf-table-head th {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+    .pdf-table-body td {
+        padding: 0.75rem;
+    }
+    /* Hide less important columns on mobile */
+    .col-volume,
+    .col-issue,
+    .col-year {
+        display: none;
+    }
+    .pdf-table-head th.col-volume,
+    .pdf-table-head th.col-issue,
+    .pdf-table-head th.col-year {
+        display: none;
+    }
+    .action-buttons {
+        gap: 0.375rem;
+        flex-wrap: wrap;
+    }
+    .btn {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+        flex: 1;
+        min-width: 70px;
+    }
+}
+
+
+/* ================================
+   Small Devices (up to 575px)
+   ================================ */
+
+@media (max-width: 575px) {
+    .pdf-list-container {
+        padding: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: #fff;
+    }
+    .pdf-list-title {
+        font-size: 1.3rem;
+        border-bottom: 2px solid #0d6efd;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    .pdf-list-wrapper {
+        border-radius: 0.375rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .pdf-table {
+        min-width: 100%;
+        font-size: 0.8rem;
+    }
+    .pdf-table-head {
+        background-color: #e9ecef;
+    }
+    .pdf-table-head th {
+        padding: 0.625rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        border-right: none;
+    }
+    .pdf-table-body td {
+        padding: 0.625rem;
+        border-right: none;
+    }
+    /* Card-like layout with data labels */
+    .pdf-row {
+        display: table-row;
+    }
+    .pdf-row td::before {
+        font-weight: 600;
+        color: #666;
+        margin-right: 0.5rem;
+    }
+    /* Hide columns that don't fit */
+    .col-volume,
+    .col-issue,
+    .col-year,
+    .col-type {
+        display: none;
+    }
+    .pdf-table-head th.col-volume,
+    .pdf-table-head th.col-issue,
+    .pdf-table-head th.col-year,
+    .pdf-table-head th.col-type {
+        display: none;
+    }
+    .col-id {
+        width: 50px;
+        text-align: center;
+    }
+    .col-author {
+        max-width: 150px;
+        word-break: break-word;
+    }
+    .col-title {
+        max-width: 100%;
+    }
+    .pdf-link {
+        font-size: 0.8rem;
+        display: block;
+        word-break: break-word;
+    }
+    .action-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.375rem;
+        width: 100%;
+    }
+    .btn {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        min-width: auto;
+    }
+    .no-data {
+        padding: 2rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ================================
+   Extra Small Devices (up to 380px)
+   ================================ */
+
+@media (max-width: 380px) {
+    .pdf-list-container {
+        padding: 0.375rem;
+    }
+    .pdf-list-title {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+    }
+    .pdf-table {
+        min-width: 100%;
+        font-size: 0.75rem;
+    }
+    .pdf-table-head th {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .pdf-table-body td {
+        padding: 0.5rem;
+    }
+    .col-id {
+        width: 40px;
+    }
+    .col-author {
+        max-width: 100px;
+    }
+    .pdf-link {
+        font-size: 0.7rem;
+    }
+    .action-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn {
+        padding: 0.375rem;
+        font-size: 0.65rem;
+    }
+    .no-data {
+        padding: 1.5rem 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ================================
+   Landscape Mode - Small Devices
+   ================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .pdf-list-container {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+    .pdf-list-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .pdf-table {
+        font-size: 0.8rem;
+    }
+    .pdf-table-head th {
+        padding: 0.5rem;
+    }
+    .pdf-table-body td {
+        padding: 0.5rem;
+    }
+    .no-data {
+        padding: 1rem;
+    }
+}
+
+
+/* ================================
+   Print Styles
+   ================================ */
+
+@media print {
+    .pdf-list-container {
+        background-color: white;
+        padding: 0;
+    }
+    .action-buttons {
+        display: none;
+    }
+    .pdf-table {
+        border-collapse: collapse;
+    }
+    .pdf-table-head th,
+    .pdf-table-body td {
+        border: 1px solid #000;
+        padding: 0.5rem;
+    }
+    .pdf-link {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+
+/* ================================
+   Accessibility
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .pdf-row,
+    .pdf-link,
+    .btn {
+        transition: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .pdf-list-container {
+        background-color: #1a1a1a;
+    }
+    .pdf-list-title {
+        color: #e0e0e0;
+        border-bottom-color: #4a9eff;
+    }
+    .pdf-list-wrapper {
+        background-color: #2d2d2d;
+    }
+    .pdf-table-head {
+        background-color: #3d3d3d;
+    }
+    .pdf-table-head th {
+        color: #e0e0e0;
+        border-bottom-color: #555;
+        border-right-color: #555;
+    }
+    .pdf-table-body td {
+        border-bottom-color: #555;
+        color: #e0e0e0;
+    }
+    .pdf-row:hover {
+        background-color: #3d3d3d;
+    }
+    .pdf-link {
+        color: #4a9eff;
+    }
+    .pdf-link:hover {
+        color: #6bb3ff;
+    }
+    .no-data {
+        color: #888;
+    }
+}
