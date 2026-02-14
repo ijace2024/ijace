@@ -1,12 +1,11 @@
-import React from 'react'
+import axios from "axios";
 
-const PdfApi = () => {
-  return (
-    <div>
-      PdfApi
-PdfApi
-    </div>
-  )
-}
+const Api = axios.create({
+  baseURL: "https://api.ijmsabc.org/api/ijmsabc/pdfs",
+  headers: {
+    "Content-Type": "multipart/form-data",
+  },
+});
 
-export default PdfApi
+export default Api;
+

@@ -58,7 +58,7 @@ const AsideBar = () => {
               <IoNewspaperOutline className="me-2 icon" />
               Conference
             </NavLink>
-          // </ListGroup.Item> */}
+          </ListGroup.Item> */}
 
            <ListGroup.Item>
             <NavLink to="/Downloads" className="nav-link p-0" id='hello1'>
@@ -78,48 +78,24 @@ const AsideBar = () => {
 
 </Card>
 
+<Card>
+  <Card.Body>
+    <Card.Title className="mb-3" id='hello'>
+      SUBJECT AREAS
+    </Card.Title>
+<ul type='none'>
+  <li><NavLink to="/EEE" className=" p-0" > EEE</NavLink></li>
+  <li><NavLink to="#" className=" p-0" > Computer Science</NavLink></li>
+  <li><NavLink to="#" className=" p-0" > Mechaanical</NavLink></li>
+  <li><NavLink to="#" className=" p-0" > Artificial Intelligence</NavLink></li>
+  <li><NavLink to="#" className=" p-0" > Ece</NavLink></li>
+</ul>
+
+  </Card.Body>
+</Card>
 
 
-      <Card className="mb-4 shadow-sm">
-        <Card.Body>
 
-          <Card.Title className=" mb-3 " id='hello1'>
-         
-          More Details
-
-
-        </Card.Title>
-
-<ListGroup variant="flush">
-
-          <ListGroup.Item>
-            <NavLink to="/membership" className="nav-link p-0" id='hello1'>
-              <IoNewspaperOutline className="me-2 icon" />
-              
-             Go To Membership
-            </NavLink>
-          </ListGroup.Item>
-
-          <ListGroup.Item>
-            <NavLink to="/reviewers" className="nav-link p-0" id='hello1'>
-              <IoNewspaperOutline className="me-2 icon" />
-             
-            Go To Reviewers
-            </NavLink>
-          </ListGroup.Item>
-
-          <ListGroup.Item>
-            <NavLink to="/editorial-board" className="nav-link p-0" id='hello1'>
-              <IoNewspaperOutline className="me-2 icon" />
-           
-             Go To Editorial Board
-            </NavLink>
-          </ListGroup.Item>
-
-         </ListGroup>
-
-         </Card.Body>
-          </Card>
 
 
 {/* /////////////////////////////////////////////////////////// */}

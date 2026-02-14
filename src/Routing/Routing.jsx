@@ -1,7 +1,7 @@
-import About from '../Header/About'
 import AboutTheJournal from '../Header/AboutTheJournal'
 import AdminDashBoard from '../Pdfs/AdminDashBoard/AdminDashBoard'
 import AdminRouting from './AdminRouting'
+import AimsAndScope from '../Header/AimsAndScope'
 import Announcement from '../Announcement/Announcement'
 import AnnouncementInput from '../Announcement/AnnouncementInput'
 import Archives from '../Pdfs/Archives'
@@ -68,7 +68,7 @@ const Routing = createBrowserRouter([
       {index:true, element:<Home/>},
       { path:"*", element:<ErrorPage/>},
         
-      {path:"/About",element:<About/>},
+      {path:"/AimsAndScope",element:<AimsAndScope/>},
       {path:"/Contact",element:<Contact/>},
    
       {path:"/PublicationEthics",element:<PublicationEthics/>},

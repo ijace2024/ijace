@@ -34,7 +34,7 @@ const NavigationBar = () => {
               <Nav.Link as={NavLink} to="/" id="color"  >
                 Home
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/About" id="color">
+              <Nav.Link as={NavLink} to="/AimsAndScope" id="color">
                 Aims and Scope
               </Nav.Link>
               <Nav.Link as={NavLink} to="/AuthorGuidelines" id="color">
@@ -55,44 +55,7 @@ const NavigationBar = () => {
                <Nav.Link as={NavLink} to="/conferences" id="color">
                 Conferences
               </Nav.Link>
-              {/*<Nav.Link as={NavLink} to="/JournalPolicies" id="color">
-                Ethics and Policies
-              </Nav.Link> */}
-              {/* <Nav.Link as={NavLink} to="/downloads" id="color">
-                Downloads
-              </Nav.Link> */}
-              
-              {/* <Nav.Link as={NavLink} to="/member" id="color">
-                Membership
-               
-              </Nav.Link> */}
-              
-               {/* <select onChange={handleChange}>
-      <option value="">-- Select --</option>
-      <option value="/reviewers">Reviewers</option>
-      <option value="/editorial-board">Editorial</option>
-      <option value="/membership">Membership</option>
-    </select> */}
-
-   
-
-{/* <select onChange={handleChange} aria-label="Navigation Select" className="mb-3" id="color1">
- 
-   
-   <option value="/membership" >Membership</option>
-  <option value="/reviewers">Reviewers</option>
-  <option value="/editorial-board">Editorial Board</option>
- 
-</select> */}
-
-
-    {/* <Nav>
-  <NavDropdown title="Membership" id="membership-dropdown" className="nav-link">
-    <NavDropdown.Item as={NavLink} to="/reviewers">Reviewers</NavDropdown.Item>
-    <NavDropdown.Item as={NavLink} to="/editorial-board">Editorial Board Members</NavDropdown.Item>
-    <NavDropdown.Item as={NavLink} to="/membership">Membership</NavDropdown.Item>
-  </NavDropdown>
-</Nav> */}
+  
 
               <Nav.Link as={NavLink} to="/Contact" id="color">
                 Contact Us

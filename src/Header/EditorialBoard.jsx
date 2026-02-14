@@ -113,7 +113,7 @@ const EditorialBoard = () => {
         </Col>
       </Row> */}
        <h2 className="fw-bold author text-center mb-3">
-           Editorial Board
+           Editorial Board Members
           </h2>
 
       <Row className="g-4">

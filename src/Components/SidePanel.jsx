@@ -1,5 +1,6 @@
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Card, CardBody, Col, Container, ListGroup, NavLink, Row } from 'react-bootstrap'
 
+import { IoNewspaperOutline } from 'react-icons/io5'
 import React from 'react'
 
 const SidePanel = () => {
@@ -66,7 +67,50 @@ const SidePanel = () => {
   const [hoveredIndex, setHoveredIndex] = React.useState(null)
 
   return (
-    <Container fluid className="px-2 px-md-3"  id='asidebar'>
+    <Container fluid className=""  id='asidebar'>
+
+      <Card className="mb-4 shadow-sm">
+        <Card.Body>
+          <Card.Title className=" mb-3 " id='hello1'>
+          Join As
+        </Card.Title>
+
+       <ListGroup variant="flush">
+
+          <ListGroup.Item>
+            <NavLink to="/membership" className="nav-link p-0" id='hello1'>
+              <IoNewspaperOutline className="me-2 icon" />
+              
+              Membership
+            </NavLink>
+          </ListGroup.Item>
+
+          <ListGroup.Item>
+            <NavLink to="/reviewers" className="nav-link p-0" id='hello1'>
+              <IoNewspaperOutline className="me-2 icon" />
+             
+             Reviewers
+            </NavLink>
+          </ListGroup.Item>
+
+          <ListGroup.Item>
+            <NavLink to="/editorial-board" className="nav-link p-0" id='hello1'>
+              <IoNewspaperOutline className="me-2 icon" />
+           
+              Editorial Board
+            </NavLink>
+          </ListGroup.Item>
+
+         </ListGroup>
+
+         </Card.Body>
+          </Card>
+
+          <Card>
+            <CardBody>
+              
+            </CardBody>
+          </Card>
 
       
       <Card className="border-0 shadow-sm" style={styles.container}>
@@ -119,6 +163,12 @@ const SidePanel = () => {
             <h3>Total - 1376</h3>
         </div>
       </Card>
+
+
+      
+      
+
+          
     </Container>
   )
 }

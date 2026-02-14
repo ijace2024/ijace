@@ -22,41 +22,17 @@ const Home = () => {
        <DarkVariantExample/>
 
       
-      <div className='home-para'>
-       <p>International Journal of
-Applied Computing and Engineering
-(IJACE)</p>   
-    {/* <h3> Why publish with the Management Journal?</h3>
-   <ul>
-      <li>This is a peer-reviewed Management Journal</li>
-      <li> DOI from CrossRef to each published paper</li>
-      <li>Publication Certificate will be provided to all authors</li>
-      <li>Open access journal (High Citation Rate)</li>
-      <li>This Management Journal is indexed by various reputed databases</li>
-      <li>Rapid publication after acceptance</li>
-    </ul>    */}
+     
 
-      </div>
-
-      {/* <div>
-        <p>IJMSABC QR Code</p>
-        <img src="/ijmsabc_qr.png" alt="qrcode" />
-      </div> */}
-
-       {/* <Card className="text-center shadow-sm my-4" style={{ maxWidth: "300px", margin: "0 auto" }}>
-      <Card.Body>
-        <Card.Title className="mb-3">IJMSABC QR Code</Card.Title>
-        <Card.Img 
-          variant="top" 
-          src="/ijmsabc_qr.png" 
-          alt="IJMSABC QR Code" 
-          style={{ width: "200px", height: "200px", objectFit: "contain", margin: "0 auto" }}
-        />
-      </Card.Body>
-    </Card> */}
+     
         
     </section>
-    {/* <input type="color" /> */}
+
+    <section className="about-section">
+        <h3>Vision</h3>
+        <p>The International Journal of Applied Computing and Engineering (IJACE) aspires to become a recognized international forum for disseminating pioneering research that drives computing-enabled engineering solutions and global digital transformation.</p>
+      </section>
+    <input type="color" />
     </>
   );
 };

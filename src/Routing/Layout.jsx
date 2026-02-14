@@ -20,18 +20,18 @@ const Layout = () => {
       <NavigationBar />
       {/* <News/> */}
 
-      <Container fluid className="py-3">
+      <Container fluid className="py-3 layout">
         <Row>
-           <Col lg={3} md={4} sm={12}>
+           <Col lg={2} md={4} sm={12} className='ml-2'>
             <AsideBar />
           </Col>
-          <Col lg={6} md={8} sm={12} className="mb-1">
+          <Col lg={8} md={6} sm={12} className="mb-1">
             <div className="content-area p-3 shadow-sm bg-white rounded">
               <Outlet />
             </div>
           </Col>
 
-          <Col lg={3} md={4} sm={12}>
+          <Col lg={2} md={4} sm={12} className='mr-2'>
             <SidePanel />
           </Col>
         </Row>

@@ -438,8 +438,7 @@
 
 .info-bar {
     color: black;
-    /* background-color: #dedede; */
-    background-color: #9e254e;
+    background-color: #E3E0E4;
     display: flex;
     justify-content: space-between;
     align-items: center;

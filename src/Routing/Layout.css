@@ -6,3 +6,8 @@
 .content-area {
     min-height: 500px;
 }
+
+.layout {
+    margin-left: 10px;
+    margin-right: 50px;
+}
