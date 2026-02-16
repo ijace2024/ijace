@@ -29,7 +29,7 @@ import ManuscriptList from '../Header/ManuscriptList'
 import Membership from '../Header/Membership'
 import MembershipList from '../Pdfs/MembershipList'
 import PdfList from '../Pdfs/AdminDashBoard/PdfList'
-import PdfProviderAll from '../Pdfs/AdminDashBoard/PdfProviderAll'
+import { PdfProviderAll } from '../Pdfs/AdminDashBoard/PdfContextAll'
 import PreviousIssues from '../Pdfs/AdminDashBoard/Previous_Issues'
 import Previous_Issues from '../Pdfs/AdminDashBoard/Previous_Issues'
 import PublicationEthics from '../Header/PublicationEthics'
@@ -44,11 +44,6 @@ import VisitorsStats from '../Pdfs/AdminDashBoard/VisitorsStats'
 import { createBrowserRouter } from 'react-router-dom'
 
 // import VisitorStats from '../Pdfs/AdminDashBoard/VisitorStats'
-
-
-// import { PdfProviderAll } from '../Pdfs/AdminDashBoard/PdfContextAll'
-
-
 
 
 

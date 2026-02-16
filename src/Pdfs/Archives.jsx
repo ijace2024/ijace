@@ -6,11 +6,7 @@ import React from 'react'
 const Archives = () => {
   return (
     <Container fluid className="py-5 px-3 px-md-4">
-      {/* <Row className="mb-5">
-        <Col xs={12}>
-          <h1 className="text-center fw-bold mb-4">Archive</h1>
-        </Col>
-      </Row> */}
+      
 
        <h2 className="fw-bold author text-center mb-4"> Archives</h2>
       

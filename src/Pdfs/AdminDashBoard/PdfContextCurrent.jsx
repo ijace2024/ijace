@@ -48,7 +48,7 @@ export const PdfProvider = ({ children }) => {
       setRawData(filtered);
       setGroupedData(formatted);
     } catch (err) {
-      console.error("❌ PDF fetch error:", err);
+      console.error(" PDF fetch error:", err);
     } finally {
       setLoading(false);
     }

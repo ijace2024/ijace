@@ -57,7 +57,7 @@ const EditorialboardList = () => {
 
       {members.length === 0 ? (
         <p className="text-center text-muted">
-          No members found for source = ijmsabc.
+          No members found for source = ijace.
         </p>
       ) : (
         <Table striped bordered hover responsive>

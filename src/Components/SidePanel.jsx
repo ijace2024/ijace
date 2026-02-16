@@ -1,7 +1,11 @@
-import { Card, CardBody, Col, Container, ListGroup, NavLink, Row } from 'react-bootstrap'
+import './AsideBar.css';
+
+import { Button, Card, CardBody, Col, Container, ListGroup, Row } from 'react-bootstrap'
 
 import { IoNewspaperOutline } from 'react-icons/io5'
+import { NavLink } from 'react-router-dom'
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const SidePanel = () => {
   const visitors = [
@@ -66,9 +70,15 @@ const SidePanel = () => {
 
   const [hoveredIndex, setHoveredIndex] = React.useState(null)
 
-  return (
-    <Container fluid className=""  id='asidebar'>
+   const navigate = useNavigate();
 
+    const handleChange = (e) => {
+    navigate(e.target.value);
+  };
+
+  return (
+    // <Container fluid className=""  id='asidebar1'>
+<Card id='asidebar'>
       <Card className="mb-4 shadow-sm">
         <Card.Body>
           <Card.Title className=" mb-3 " id='hello1'>
@@ -106,11 +116,41 @@ const SidePanel = () => {
          </Card.Body>
           </Card>
 
-          <Card>
-            <CardBody>
+          
+
+          <Container fluid className="py-5 px-3 px-md-4">
+      
+
+       
+      <Row className="justify-content-center g-3">
+        {/* <Col xs={12} sm={6} md={5} lg={4} className="d-flex"> */}
+          <NavLink to="/Current_Issues" end className="w-100">
+            <Button
+              // variant="primary" 
+              className="w-100 py-2 fw-bold "
+              title="View Current Issues"
+              id='issue'
               
-            </CardBody>
-          </Card>
+            >
+              Current Issues
+            </Button>
+          </NavLink>
+        {/* </Col>
+
+        <Col xs={12} sm={6} md={5} lg={4} className="d-flex"> */}
+          <NavLink to="/Previous_Issues" className="w-100">
+            <Button 
+              // variant="primary" 
+              className="w-100 py-2 fw-bold"
+              title="View Previous Issues"
+              id='issue'
+            >
+              Previous Issues
+            </Button>
+          </NavLink>
+        {/* </Col> */}
+      </Row>
+    </Container>
 
       
       <Card className="border-0 shadow-sm" style={styles.container}>
@@ -167,9 +207,8 @@ const SidePanel = () => {
 
       
       
-
-          
-    </Container>
+</Card>
+   
   )
 }
 

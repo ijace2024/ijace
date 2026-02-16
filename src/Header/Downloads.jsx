@@ -22,7 +22,9 @@ const Downloads = () => {
                 download="Cover Page.pdf"  // ✅ Forces download
                 className="mt-auto"
               >
-                <Button variant="primary" className="w-100">
+                <Button variant="primary" className="w-100 py-2 fw-bold "
+              title="Download Pdf"
+              id='issue'>
                   Download PDF
                 </Button>
               </a>
@@ -40,7 +42,9 @@ const Downloads = () => {
                 download="Undertaking-by-Authors.pdf" // ✅ Custom file name
                 className="mt-auto"
               >
-                <Button variant="primary" className="w-100">
+                <Button variant="primary" className="w-100 py-2 fw-bold "
+              title="Download Pdf"
+              id='issue'>
                   Download PDF
                 </Button>
               </a>

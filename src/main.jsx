@@ -14,17 +14,17 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App.jsx'
-// import { PdfProvider } from './Pdfs/AdminDashBoard/PdfContextCurrent.jsx'
-// import { PdfProviderPrevious } from './Pdfs/AdminDashBoard/PdfContextPrevious.jsx'
+import { PdfProvider } from './Pdfs/AdminDashBoard/PdfContextCurrent.jsx'
+import { PdfProviderPrevious } from './Pdfs/AdminDashBoard/PdfContextPrevious.jsx'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <PdfProviderPrevious> */}
-      {/* <PdfProvider> */}
+    <PdfProviderPrevious>
+      <PdfProvider>
         <App />
-      {/* </PdfProvider> */}
-    {/* </PdfProviderPrevious> */}
+      </PdfProvider>
+    </PdfProviderPrevious>
   </StrictMode>
 );

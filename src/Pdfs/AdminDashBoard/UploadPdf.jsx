@@ -18,7 +18,7 @@ export default function UploadPdf() {
     e.preventDefault();
 
     if (!pdfFile) {
-      setMsg("❌ Please select PDF file");
+      setMsg(" Please select PDF file");
       return;
     }
 
@@ -40,7 +40,7 @@ export default function UploadPdf() {
       await Api.post("/upload", formData);
       setMsg("✅ Uploaded Successfully!");
     } catch (err) {
-      setMsg("❌ Upload Failed: " + err.response?.data);
+      setMsg("Upload Failed: " + err.response?.data);
     }
   };
 

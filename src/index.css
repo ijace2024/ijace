@@ -496,7 +496,10 @@
 /* ////////////////////////////////////////////
  */
 
+#issue {
+    color: white;
+}
+
 #issue:hover {
-    /* background-color: white; */
     color: yellow;
 }

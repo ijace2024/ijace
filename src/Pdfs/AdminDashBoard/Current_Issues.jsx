@@ -4,12 +4,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { usePdf } from "./PdfContextCurrent";
 
-// import { usePdf } from "./PdfContextCurrent";
-
-// 👈 import css
-
-
-
 const CurrentIssues = () => {
   const { groupedData, loading } = usePdf();
   const navigate = useNavigate();
